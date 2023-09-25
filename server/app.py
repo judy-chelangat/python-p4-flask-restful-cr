@@ -45,7 +45,7 @@ class Newsletters(Resource):
         return response
 
 api.add_resource(Newsletters, '/newsletters')
-
+#creating new records
 def post(self):
 
     new_record = Newsletter(
@@ -64,7 +64,7 @@ def post(self):
     )
 
     return response
-
+#retrieving a single record
 class NewsletterByID(Resource):
 
     def get(self, id):
